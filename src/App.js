@@ -17,7 +17,7 @@ function App() {
 const sugProducts = getSugProducts();
 
   // const [chooseProductId , setChooseProductId] = useState(null);
-  let chooseProductId = null;
+  let chooseProductId = 1;
 
   return (
 

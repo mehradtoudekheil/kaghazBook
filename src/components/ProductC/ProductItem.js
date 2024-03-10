@@ -11,6 +11,8 @@ import StarComponents from './StarComponents';
 import ProductTags from './ProductTags';
 import ProductMoreOption from './ProductMoreOption';
 import ProductProperty from './ProductProperty';
+import ProductAddComments from './ProductAddComments';
+import ProductCommentsWrapper from './ProductCommentsWrapper';
 
 
 function ProductItem() {
@@ -31,40 +33,40 @@ function ProductItem() {
   let component;
 
 
-  const changeToAbout = ()=>{
+  const changeToAbout = () => {
     showComponents = "ABOUT";
     console.log(0);
   }
 
-  const changeToOption =()=>{
+  const changeToOption = () => {
     showComponents = "OPTION";
     console.log(1);
   }
 
-  const changeToProperty =()=>{
+  const changeToProperty = () => {
     showComponents = "PROPERTY";
     console.log(2
-      );
+    );
   }
 
 
 
 
-  switch(showComponents){
-    case "ABOUT" : 
-      component = <AboutBook/>
+  switch (showComponents) {
+    case "ABOUT":
+      component = <AboutBook />
       break;
-    case "OPTION" : 
-      component = <ProductMoreOption/>
+    case "OPTION":
+      component = <ProductMoreOption />
       break;
-    case "PROPERTY" : 
-      component = <ProductProperty/>
+    case "PROPERTY":
+      component = <ProductProperty />
       break;
-      default : 
-        component = <AboutBook/>
+    default:
+      component = <AboutBook />
   }
 
-  
+
 
 
 
@@ -166,31 +168,31 @@ function ProductItem() {
           </div>
         </div>
       </div>
-      <div className='w-full h-100 bg-white p-7'>
+      <div className='w-full min-h-100 bg-white p-7'>
         <div className='w-full h-full bg-gray-50 rounded-2xl'>
           <div className='h-16 w-full border-b-2'>
             <nav className='flex h-full items-center px-5'>
-              <button onClick={()=>changeToAbout()} className='text-gray-700 text-lg font-bold mx-2'>
+              <button onClick={() => changeToAbout()} className='text-gray-700 text-lg font-bold mx-2'>
                 درباره کتاب
               </button>
               /
-              <button onClick={()=>changeToOption()} className='text-gray-400  text-lg mx-2 hover:text-gray-700 transition duration-200 hover:font-bold'>
-                 بررسی تخصصی تر
+              <button onClick={() => changeToOption()} className='text-gray-400  text-lg mx-2 hover:text-gray-700 transition duration-200 hover:font-bold'>
+                بررسی تخصصی تر
               </button>
               /
-              <button onClick={()=>changeToProperty()} className='text-gray-400  text-lg mx-2 hover:text-gray-700 transition duration-200 hover:font-bold'>
-                 مشخصات
+              <button onClick={() => changeToProperty()} className='text-gray-400  text-lg mx-2 hover:text-gray-700 transition duration-200 hover:font-bold'>
+                مشخصات
               </button>
             </nav>
           </div>
-          <div className='w-full h-80 p-7 grid grid-cols-3 gap-x-5'>
-            <div className='col-span-2 bg-white rounded-xl'>
-            <AboutBook className="block"/>
-            {/* <ProductMoreOption className="hidden"/> */}
-            {/* <ProductProperty className="hidden"/> */}
+          <div className='w-full min-h-80 p-7 grid grid-cols-3 gap-x-5 md:gap-y-3'>
+            <div className='col-span-3 md:col-span-2 bg-white rounded-xl'>
+              <AboutBook className="block" />
+              {/* <ProductMoreOption className="hidden"/> */}
+              {/* <ProductProperty className="hidden"/> */}
             </div>
-            <div className='col-span-1 bg-white rounded-xl'>
-              <div className='border-b border-gray-300 h-28 w-full flex items-center justify-between p-10'>
+            <div className='col-span-3 md:col-span-1 bg-white rounded-xl'>
+              <div className='border-b border-gray-300 min-h-28 w-full flex items-center justify-between p-10'>
                 <div className=''>
                   <h6 className='text-gray-500'>امتیاز کاربران</h6>
                 </div>
@@ -203,11 +205,23 @@ function ProductItem() {
               </div>
               <div className='w-full px-10 pt-5'>
                 <h6 className='text-gray-500'>برچسب ها</h6>
-                <div className='flex w-full flex-wrap mt-2'>
+                <div className='flex w-full flex-wrap mt-2 pb-5 md:pb-0'>
                   <ProductTags tags={product.tags} />
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className='w-full min-h-120 bg-white p-7'>
+        <div className='w-full h-full bg-gray-50 rounded-2xl p-10 grid grid-cols-12 gap-5'>
+          <div className='h-full col-span-12 md:col-span-4 bg-white rounded-xl p-4'>
+            <h6 className='font-bold text-lg text-gray-500 border-b-2 pb-2'>دیدگاه شما</h6>
+            <ProductAddComments/>
+          </div>
+          <div className='h-full col-span-12 md:col-span-8 bg-white rounded-xl p-4'>
+            <h6 className='font-bold text-lg text-gray-500 border-b-2 pb-2'>دیدگاه کاربران</h6>
+            <ProductCommentsWrapper/>
           </div>
         </div>
       </div>

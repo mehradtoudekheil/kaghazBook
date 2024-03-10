@@ -11,7 +11,9 @@ import HomePopularContainer from '../components/HomeC/HomePopularContainer'
 import HomeAds from '../components/HomeC/HomeAds'
 import MainFooter from '../components/mainComponents/MainFooter'
 
+
 function HomePage() {
+
   return (
     <div dir='rtl'>
       <MainHeader/>

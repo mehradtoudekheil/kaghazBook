@@ -5,9 +5,9 @@ function StarComponents({ point }) {
 
     // console.log(typeof(point));
     let myPoint = point;
-        console.log(myPoint);
+        
     let stars;
-    console.log(1<myPoint && myPoint<1.9);
+
 
     switch (true) {
         case 0.1 < myPoint && myPoint <0.9:

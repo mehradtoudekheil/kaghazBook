@@ -1,8 +1,14 @@
 import React from 'react'
 import { FaSearch , FaShoppingCart , FaBell , FaRegUser   } from "react-icons/fa";
 import MainMenu from './MainMenu';
+import { useContext } from 'react';
+import { MyContext } from '../../context/MyContext';
 
 function MainHeader() {
+
+  const info = useContext(MyContext);
+
+
   return (
   <div className='navigation'>
       <div className=' w-full grid grid-cols-11 p-5 border'>
@@ -23,7 +29,10 @@ function MainHeader() {
       <div className=' col-span-6 md:col-span-2 p-1 flex justify-end md:justify-center'>
         <div className='w-3/4 md:w-2/3 h-full p-1 bg-white border-2 border-r-2 border-b-2 border-emerald-700 rounded-tl-xl rounded-br-xl flex items-center justify-around'>
         <FaBell className='text-emerald-700 cursor-pointer text-lg hover:text-yellow-300'/>
-          <FaShoppingCart className='text-emerald-700 cursor-pointer text-lg hover:text-yellow-300'/>
+        <div>
+        <FaShoppingCart className='text-emerald-700 cursor-pointer text-lg hover:text-yellow-300'/>
+          <span>{info.cartIndex}</span>
+        </div>
           <FaRegUser className='text-emerald-700 cursor-pointer text-lg hover:text-yellow-300'/>
         </div>
       </div>

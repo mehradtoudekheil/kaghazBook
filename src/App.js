@@ -32,11 +32,18 @@ function App() {
     let myProduct = sugProducts;
     myProduct.map(item=>{
       if(item.id == id){
-        item.addToCart = true;
+
+        if(item.addToCart){
+          item.indexQ += 1;
+        }else{
+          item.addToCart = true;
+          item.indexQ = 1;
+        }
+
+        
       }
     })
     sugProducts = myProduct;
-    console.log(sugProducts);
   }
 
 

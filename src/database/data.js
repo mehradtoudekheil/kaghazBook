@@ -16,7 +16,8 @@ const sugProducts = [
         tags : ["داستایفسکی" , "ادبیات روس" , "ابله" , "رمان"],
         fav: false,
         suggest : false,
-        addToCart : false
+        addToCart : false,
+        indexQ : 0
     },
     {
         id : 2 ,
@@ -35,7 +36,8 @@ const sugProducts = [
         tags : ["روانشناسی" , "اروین یالوم" , "نیچه" , "فلسفه"],
         fav: false,
         suggest : false,
-        addToCart : false
+        addToCart : false,
+        indexQ : 0
     },
     {
         id : 3,
@@ -54,7 +56,8 @@ const sugProducts = [
         tags : ["نیچه" , "فلسفه" , "کتاب" , "لورم"],
         fav: false,
         suggest : false,
-        addToCart : false
+        addToCart : false,
+        indexQ : 0
     },
     {
         id : 4 ,
@@ -73,7 +76,8 @@ const sugProducts = [
         tags : ["رمان" , "کیمیاگر" , "لورم" , "لورم"],
         fav: false,
         suggest : false,
-        addToCart : false
+        addToCart : false,
+        indexQ : 0
     },
     {
         id : 5 ,
@@ -92,7 +96,8 @@ const sugProducts = [
         tags : ["ادبیات روس" , "داستایفسکی" , "رمان" , "جنایت و مکافات"],
         fav: false,
         suggest : false,
-        addToCart : false
+        addToCart : false,
+        indexQ : 0
     },
     {
         id : 6 ,
@@ -111,7 +116,8 @@ const sugProducts = [
         tags : ["جز از کا" , "خودشناسی" , "روانشناسی" , "لورم"],
         fav: false,
         suggest : false,
-        addToCart : false
+        addToCart : false,
+        indexQ : 0
     },
     {
         id : 7 ,
@@ -130,7 +136,8 @@ const sugProducts = [
         tags : ["زندگینامه" , "استیو جابز" , "لورم" , "لورم"],
         fav: false,
         suggest : false,
-        addToCart : false
+        addToCart : false,
+        indexQ : 0
     },
     {
         id : 8 ,
@@ -149,7 +156,8 @@ const sugProducts = [
         tags : ["تاریخ" , "جغرافیا" , "جنگ" , "لورم"],
         fav: false,
         suggest : false,
-        addToCart : false
+        addToCart : false,
+        indexQ : 0
     },
     {
         id : 9 ,
@@ -168,7 +176,8 @@ const sugProducts = [
         tags : ["کودک" , "نوجوان" , "داستان" , "لورم"],
         fav: false,
         suggest : false,
-        addToCart : false
+        addToCart : false,
+        indexQ : 0
     },
     {
         id : 10 ,
@@ -187,7 +196,8 @@ const sugProducts = [
         tags : ["رمان" , "جورج اورول" , "لورم" , "لورم"],
         fav: false,
         suggest : false,
-        addToCart : false
+        addToCart : false,
+        indexQ : 0
     },
 
 ]

@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaSearch , FaShoppingCart , FaBell , FaRegUser   } from "react-icons/fa";
-import MainMenu from './MainMenu';
+// import MainMenu from './MainMenu';
 import { useContext } from 'react';
 import { MyContext } from '../../context/MyContext';
 import { Link } from 'react-router-dom';
@@ -38,7 +38,7 @@ function MainHeader() {
         </div>
       </div>
     </div>
-    <MainMenu/>
+    {/* <MainMenu/> */}
   </div>
   )
 }

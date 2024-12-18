@@ -202,6 +202,61 @@ const sugProducts = [
 
 ]
 
+const category = [
+    {
+        id : 1 , 
+        value : ["ادبیات فارسی" , "ادبیات روس" , "ادبیات فرانسه" , "شعر کلاسیک " , "شعر نو" , "دیوان اشعار" , "ادبیات انگلیس"]
+    },
+    {
+        id : 2 , 
+        value : ["one" , "tow" , " three" , "four"]
+    },
+    {
+        id : 3 , 
+        value : ["one" , "tow" , " three" , "four"]
+    },
+    {
+        id : 4 , 
+        value : ["one" , "tow" , " three" , "four"]
+    },
+    {
+        id : 5 , 
+        value : ["one" , "tow" , " three" , "four"]
+    },
+    {
+        id : 6 , 
+        value : ["one" , "tow" , " three" , "four"]
+    },
+    {
+        id : 7 , 
+        value : ["one" , "tow" , " three" , "four"]
+    }, 
+     {
+        id : 8 , 
+        value : ["one" , "tow" , " three" , "four"]
+    },  
+    {
+        id : 9 , 
+        value : ["one" , "tow" , " three" , "four"]
+    }, 
+     {
+        id : 10 , 
+        value : ["one" , "tow" , " three" , "four"]
+    },
+    {
+        id : 11 , 
+        value : ["one" , "tow" , " three" , "four"]
+    },
+    {
+        id : 12 , 
+        value : ["one" , "tow" , " three" , "four"]
+    },
+]
+
+export const getCategory = () => {
+    return category;
+}
+
 export const    getSugProducts = () => {
     return sugProducts;
 }
@@ -213,3 +268,5 @@ const cartProducts = [];
 export const    getCartProducts = () => {
     return cartProducts;
 }
+
+

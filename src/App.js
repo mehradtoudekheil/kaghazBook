@@ -9,13 +9,14 @@ import AccountRegPage from "./pages/AccountRegPage";
 // import tools 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { MyContext } from "./context/MyContext";
-import { getSugProducts } from "./database/data";
+import { getSugProducts , getCategory } from "./database/data";
 import { useState } from "react";
 
 function App() {
 
   //get product from data.js
   let sugProducts = getSugProducts();
+  let category = getCategory();
 
   // choosen product id for show in product page
   let chooseProductId = 1;
@@ -49,7 +50,7 @@ function App() {
 
   return (
 
-    <MyContext.Provider value={{sugProducts , chooseProductId , signStatus , setSignStatus , addToCartFunc , cartIndex , setCartIndex }}>
+    <MyContext.Provider value={{sugProducts , category , chooseProductId , signStatus , setSignStatus , addToCartFunc , cartIndex , setCartIndex }}>
       <BrowserRouter>
         <Routes>
 
